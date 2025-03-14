@@ -1,0 +1,245 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.6;
+  color: #333;
+  background-color: rgb(51, 128, 128); /* Original color */
+}
+
+header {
+  background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+  color: #fff; /* Original color */
+  padding: 1px;
+  text-align: left;
+
+}
+
+nav {
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(0, 0, 0, 0.7); /* Original color */
+  position: fixed; /* Make the navbar fixed */
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+nav.scrolled {
+  background: rgba(0, 0, 0, 0.9); /* Slightly darker on scroll */
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff; /* Original color */
+  justify-content: left;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: space-around;
+}
+
+.nav-links a {
+  color: #fff; /* Original color */
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #fff; /* No change in color */
+  text-decoration: underline; /* Add underline on hover */
+}
+
+.hamburger {
+  display: none; /* Hidden by default */
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #fff; /* Original color */
+}
+
+/* Add padding to the main content to avoid overlap with the fixed navbar */
+main {
+  padding-top: 80px; /* Adjust this value based on the height of your navbar */
+}
+
+.hero {
+  padding: 5rem 0;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #fff; /* Original color */
+}
+
+.hero-image {
+  width: 1280px;
+  height: 550px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #fff; /* Original color */
+}
+
+.btn {
+  background: #333; /* Original color */
+  color: #fff; /* Original color */
+  padding: 0.8rem 2rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background: #333; /* No change in color */
+  opacity: 0.9; /* Slight transparency on hover */
+}
+
+/* Products Section */
+.products {
+  padding: 2rem;
+  text-align: center;
+  background-color: rgb(51, 128, 128); /* Original color */
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.product-card {
+  background: #c28fae; /* Original color */
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.product-card h3 {
+  margin: 1rem 0 0.5rem;
+  color: #333; /* Original color */
+}
+
+.product-card p {
+  font-size: 1.2rem;
+  color: #075975; /* Original color */
+}
+
+/* About Us Section */
+.about {
+  padding: 2rem;
+  text-align: center;
+  background: #c28fae; /* Original color */
+}
+
+/* Contact Section */
+.contact {
+  padding: 2rem;
+  text-align: center;
+  background-color: rgb(51, 128, 128); /* Original color */
+}
+
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact input, .contact textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc; /* Original color */
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact button {
+  background: #333; /* Original color */
+  color: #fff; /* Original color */
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+  background: #333; /* No change in color */
+  opacity: 0.9; /* Slight transparency on hover */
+}
+
+/* Footer */
+footer {
+  background: #c28fae; /* Original color */
+  color: #fff; /* Original color */
+  text-align: center;
+  padding: 1rem;
+}
+
+.social-links {
+  margin-bottom: 1rem;
+}
+
+.social-links a {
+  color: #fff; /* Original color */
+  margin: 0 0.5rem;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #fff; /* No change in color */
+  opacity: 0.8; /* Slight transparency on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+      display: none; /* Hide the nav links by default on mobile */
+      flex-direction: column;
+      background: rgba(0, 0, 0, 0.9); /* Background for mobile menu */
+      position: absolute;
+      top: 60px; /* Adjust based on navbar height */
+      left: 0;
+      width: 100%;
+      padding: 1rem;
+      text-align: center;
+  }
+
+  .nav-links.active {
+      display: flex; /* Show the nav links when active */
+  }
+
+  .hamburger {
+      display: block; /* Show the hamburger button on mobile */
+  }
+
+  .hero h1 {
+      font-size: 2rem;
+  }
+
+  .hero p {
+      font-size: 1rem;
+  }
+}
