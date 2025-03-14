@@ -1,4 +1,4 @@
-"# PRODIGY_WD_01" 
+"# PRODIGY_WD_01" 🌟
 # FashionHub - Clothing Shop Website🛍️ 
 Welcome to **FashionHub**, a modern and responsive clothing shop website designed to showcase trendy fashion products. This project is built using **HTML**, **CSS**, and **JavaScript**, and it includes a clean and user-friendly interface for browsing products, contacting the shop, and exploring the brand.
 ## Features✨
@@ -14,3 +14,5 @@ Welcome to **FashionHub**, a modern and responsive clothing shop website designe
 - **JavaScript**: For adding interactivity and dynamic behavior.
 - **Font Awesome**: For icons used in the footer and navigation.
 - **Google Fonts**: For custom typography (if used).
+Live Demo🧩
+ https://ayshaabdella.github.io/PRODIGY_WD_01/
